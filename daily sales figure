@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+ int arr[30];
+ int total = 0;
+ 
+ printf("Enter sales for the month: \n");
+ for(int d=0; d<30; d++){
+     printf("Day %d: ",d+1);
+     scanf("%f",&arr[d]);
+ }
+ for(int d=0; d<30; d++){
+     total += arr[d];
+ }
+ printf("Total sales of the month is %.2f",total);
+ return 0;
+}
