@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(){
+    int marks[10];
+    int max_marks = 0;
+    
+    printf("Enter the marks of 10 students: \n");
+    
+    for(int i=1; i<=10; i++){
+        printf("Enter marks for students %d: ",i);
+        scanf("%d",&marks[i]);
+        
+        if(marks[i] > max_marks){
+            max_marks = marks[i];
+        }
+    }
+    printf("THe maximum marks obtained are %d \n",max_marks);
+    return 0;
+}
