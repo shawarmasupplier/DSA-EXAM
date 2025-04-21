@@ -1,0 +1,15 @@
+#include <stdio.h>
+int factorial(int n, int accumulator){
+    if(n==0){
+        return accumulator;
+    }
+    else{
+        return factorial(n-1,n*accumulator);
+    }
+}
+int main(){
+    int n = 3;
+    int result = factorial(n,1);
+    printf("Factorial of %u is %u \n",n,result);
+    return 0;
+}
